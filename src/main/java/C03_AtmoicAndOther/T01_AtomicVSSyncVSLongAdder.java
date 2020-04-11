@@ -10,6 +10,10 @@ import java.util.concurrent.atomic.LongAdder;
  * Atomic: 100000000 time 1706
  * Sync: 100000000 time 3545
  * LongAdder: 100000000 time 207
+ *
+ * Atomic 无锁操作，CAS
+ * Sync 要加锁，有时候可能要去操作系统申请重量级锁
+ * LongAdder内部使用了分段锁，每个分段单独计算，然后合并
  */
 
 public class T01_AtomicVSSyncVSLongAdder {
