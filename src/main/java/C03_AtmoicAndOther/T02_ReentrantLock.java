@@ -8,6 +8,11 @@ import java.util.concurrent.locks.ReentrantLock;
  * synchronized具有可重入性，自动加锁，解锁
  *
  * ReentrantLock手动加锁，也需要手动解锁
+ *
+ * ReentrantLock使用CAS                    T02
+ * trylock自己控制，如果锁不住该怎么处理       T03
+ * lockInterruptibly,锁住或等待时，可以被打断 T04
+ * 自己可以指定，公平锁或非公平锁              T05
  */
 
 public class T02_ReentrantLock {
