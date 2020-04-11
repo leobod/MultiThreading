@@ -9,7 +9,7 @@ import java.util.concurrent.CountDownLatch;
  *
  */
 
-public class T06_OtherCountDown {
+public class T06_CountDownLatch {
 
     private static void usingCountDownLatch() {
         Thread[] threads = new Thread[100];
