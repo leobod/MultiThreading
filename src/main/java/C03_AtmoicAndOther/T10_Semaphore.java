@@ -28,9 +28,9 @@ public class T10_Semaphore {
         new Thread(() -> {
             try {
                 semaphore.acquire();
-                System.out.println("T1 Running ... ");
+                System.out.println("T2 Running ... ");
                 Thread.sleep(200);
-                System.out.println("T1 Running ... ");
+                System.out.println("T2 Running ... ");
             } catch (InterruptedException e) {
                 e.printStackTrace();
             } finally {
@@ -41,9 +41,9 @@ public class T10_Semaphore {
         new Thread(() -> {
             try {
                 semaphore.acquire();
-                System.out.println("T1 Running ... ");
+                System.out.println("T3 Running ... ");
                 Thread.sleep(200);
-                System.out.println("T1 Running ... ");
+                System.out.println("T3 Running ... ");
             } catch (InterruptedException e) {
                 e.printStackTrace();
             } finally {
