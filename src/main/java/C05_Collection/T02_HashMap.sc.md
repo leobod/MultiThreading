@@ -173,6 +173,12 @@ final V putVal(int hash, K key, V value, boolean onlyIfAbsent, boolean evict) {
     }
 ```
 
+#### 图片说明
+
+![HashMap](./image/hashmap-resize.png)
+
+
+
 #### get
 
 ```java
